@@ -30,6 +30,7 @@
     color: #131313;
     font-weight: 700;
     font-size: 3rem;
+    padding: 20px 0px;
 }
 
 /* header styles */
@@ -135,7 +136,7 @@ main {
     font-weight: 700;
 }
 
-.teams-content p {
+.description {
     color: #727272;
     font-family: Work Sans;
     font-size: 1rem;
@@ -151,6 +152,7 @@ main {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-top: 20px;
 
 }
 
@@ -158,20 +160,46 @@ main {
     border-radius: 8px;
     border: 1px solid #FF900E;
     text-align: center;
+    padding: 30px;
+    height: 150px;
+    width: 240px;
+
 }
+
+
 
 .facts-card-container .card-title {
     color: #727272;
     font-size: 1.25rem;
     font-weight: 600;
+
 }
 
 .facts-card-container .card-stats {
     font-size: 2.8rem;
     font-weight: 600;
     color: #424242;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
+/* sponsers section */
+
+.sponsers {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.sponsers-img-container img {
+    width: 165.833px;
+    height: 50px;
+
+}
+
+.sponsers-img-container {
+    display: flex;
+    justify-content: space-around;
+}
 
 /* resposive media queries */
 
@@ -188,9 +216,16 @@ main {
         padding-bottom: 15px;
     }
 
-    .teams {
-        flex-direction: column;
+    .description {
+        padding: 10px;
     }
+
+    .teams,
+    .facts-card-container {
+        flex-direction: column;
+
+    }
+
 
     .teams-img-containers {
         grid-template-columns: 1fr;
@@ -200,6 +235,20 @@ main {
         padding-right: 20px;
         padding-left: 20px;
     }
+
+    .facts-card-container {
+        gap: 20px;
+    }
+
+    .facts {
+        text-align: center;
+    }
+
+    .sponsers-img-container img {
+        width: 50px;
+        height: 25px;
+    }
+
 }
 
 @media screen and (min-width:576px) and (max-width:992px) {
@@ -216,7 +265,27 @@ main {
         padding-bottom: 25px;
     }
 
-    .teams {
+
+    .teams,
+    .facts-card-container {
         flex-direction: column;
+    }
+
+    .teams-content {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .facts-card-container {
+        gap: 20px;
+    }
+
+    .facts {
+        text-align: center;
+    }
+
+    .sponsers-img-container img {
+        width: 70px;
+        height: 40px;
     }
 }
